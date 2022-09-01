@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="sudoku.css">
+        <script src="sudoku.js"></script>
+        </head>
+        <body>
+        <div class="container">
+        <div class="row">
+            
+
+
+               
+                <div class="col-7">
+                    <h1>Sudoku</h1>
+
+                    <div class="btn-group  m-2 p-2" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-primary" onclick="clickEasy()">Easy</button>
+                        <button type="button" class="btn btn-secondary" onclick="clickMedium()">Medium</button>
+                        <button type="button" class="btn btn-danger" onclick="clickHard()">Hard</button> &nbsp;
+                        <button type="button" class="btn btn-success" onclick="clickSolve()">Solve</button>
+                    </div>
+                    <hr>
+                    <h2 id="errors">0</h2>
+        
+                    <!-- 9x9 board -->
+                    <div id="board"></div>
+                    <br>
+                    <div id="digits">
+                    </div>
+                </div>
+
+                <div class="col-5"><br>
+                    <h1>Instructions</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item">Click on number, then on box to fill the box with selected number.</li>
+                        <li class="list-group-item">To change selected number, click on another number.</li>
+                        <li class="list-group-item">Errors are constantly counted</li>
+                        <li class="list-group-item">There are three modes: easy, medium, and hard.</li>
+                      </ul>
+                </div>
+    
+    
+        </div>
+    </div>
+    </body>
+        </html>
